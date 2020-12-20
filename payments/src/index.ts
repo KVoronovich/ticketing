@@ -8,6 +8,7 @@ import { natsWrapper } from './nats-wrapper';
 const PORT = 3000;
 
 const start = async () => {
+    console.log('starting payments')
     if (!process.env.JWT_KEY) {
         throw new Error('JWT must be defined');
     }
