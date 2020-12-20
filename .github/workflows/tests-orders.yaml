@@ -1,7 +1,9 @@
 name: tests-yaml
 
 on:
-  pull_request
+  pull_request:
+    paths:
+      - 'orders/**'
 
 jobs:
   build:
